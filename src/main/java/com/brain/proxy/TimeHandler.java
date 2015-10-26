@@ -1,0 +1,35 @@
+package com.brain.proxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+public class TimeHandler implements InvocationHandler {
+
+	public TimeHandler(Object target) {
+		super();
+		this.target = target;
+	}
+
+	private Object target;
+	
+	/*
+	 * ????
+	 * proxy  ?????????
+	 * method  ?????????????
+	 * args ?????????
+	 * 
+	 * ???????
+	 * Object  ??????????
+	 * */
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
+		long starttime = System.currentTimeMillis();
+		System.out.println("??????....");
+		method.invoke(target);
+		long endtime = System.currentTimeMillis();
+		System.out.println("????????....  ????????" 
+				+ (endtime - starttime) + "????");
+		return null;
+	}
+
+}
