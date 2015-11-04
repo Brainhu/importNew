@@ -3,11 +3,11 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  *******************************************************************************/
-package org.guess.core.utils.mapper;
+package com.common.util.mapper;
 
+import com.common.util.ReflectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
-import org.guess.core.utils.ReflectionUtils;
 
 import javax.xml.bind.*;
 import javax.xml.bind.annotation.XmlAnyElement;

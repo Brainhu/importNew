@@ -1,4 +1,4 @@
-package org.guess.core.utils;
+package com.common.util;
 
 @SuppressWarnings("unused")
 public class WordToHtml {

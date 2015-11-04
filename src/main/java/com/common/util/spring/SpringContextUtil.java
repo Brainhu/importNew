@@ -1,4 +1,4 @@
-package org.guess.core.utils.spring;
+package com.common.util.spring;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;

@@ -1,4 +1,4 @@
-package org.guess.core.utils;
+package com.common.util;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;

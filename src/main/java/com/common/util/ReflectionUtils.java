@@ -5,7 +5,7 @@
  * 
  * $Id: ReflectionUtils.java 1504 2011-03-08 14:49:20Z calvinxiu $
  */
-package org.guess.core.utils;
+package com.common.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

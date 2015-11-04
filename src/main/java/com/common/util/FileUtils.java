@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  */
-package org.guess.core.utils;
+package com.common.util;
 
 import java.io.*;
 import java.util.Enumeration;

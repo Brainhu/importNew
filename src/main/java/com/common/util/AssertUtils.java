@@ -1,4 +1,4 @@
-package org.guess.core.utils;
+package com.common.util;
 
 import java.util.Collection;
 import java.util.Map;

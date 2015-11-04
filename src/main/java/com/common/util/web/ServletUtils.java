@@ -5,7 +5,12 @@
  * 
  * $Id: ServletUtils.java 1493 2011-02-13 16:33:38Z calvinxiu $
  */
-package org.guess.core.utils.web;
+package com.common.util.web;
+
+import com.common.util.AssertUtils;
+import com.common.util.Constants;
+import com.common.util.EncodeUtils;
+import com.common.util.FileUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Enumeration;
@@ -17,10 +22,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.guess.core.Constants;
-import org.guess.core.utils.AssertUtils;
-import org.guess.core.utils.EncodeUtils;
-import org.guess.core.utils.FileUtils;
 
 /**
  * Http与Servlet工具类.
@@ -200,7 +201,7 @@ public abstract class ServletUtils {
 	 * @param fileName 文件名称
 	 */
 	public static String generateTempFileName(HttpServletRequest request,String fileName){
-		return getRealPath(request)+ "/"+Constants.TEMP_FOLDER_NAME+"/" +  FileUtils.uuidFileName(fileName);
+		return getRealPath(request)+ "/"+ Constants.TEMP_FOLDER_NAME+"/" +  FileUtils.uuidFileName(fileName);
 	}
 	
 	/**

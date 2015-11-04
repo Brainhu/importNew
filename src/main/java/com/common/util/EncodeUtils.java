@@ -5,7 +5,7 @@
  * 
  * $Id: EncodeUtils.java 1509 2011-04-23 17:23:56Z calvinxiu $
  */
-package org.guess.core.utils;
+package com.common.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

@@ -1,4 +1,4 @@
-package org.guess.core.utils.excel;
+package com.common.util.excel;
 
 /**
  * 用来存储Excel标题的对象，通过该对象可以获取标题和方法的对应关系

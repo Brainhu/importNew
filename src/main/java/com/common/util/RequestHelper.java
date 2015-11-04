@@ -1,4 +1,4 @@
-package com.zhite.common.utils;
+package com.common.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

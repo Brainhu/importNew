@@ -5,16 +5,16 @@
  * 
  * $Id: ConvertUtils.java 1575 2011-05-09 13:46:56Z calvinxiu $
  */
-package org.guess.core.utils.mapper;
+package com.common.util.mapper;
 
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import com.common.util.ReflectionUtils;
 import org.apache.commons.beanutils.converters.DateConverter;
 import org.apache.commons.lang3.StringUtils;
 import org.dozer.DozerBeanMapper;
-import org.guess.core.utils.ReflectionUtils;
 
 import com.google.common.collect.Lists;
 
