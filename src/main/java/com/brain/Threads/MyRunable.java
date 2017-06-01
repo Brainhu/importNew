@@ -1,4 +1,4 @@
-package com.brain.ThreadAndRunable;
+package com.brain.Threads;
 
 /**
  * Created by Brainhu on 15/5/23.
