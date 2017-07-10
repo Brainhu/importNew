@@ -1,10 +1,10 @@
-package com.brain.Threads;
+package com.brain.Concurrent.Threads;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/** 这仅仅是 ThreadLocal 的个人实现
  * Created by Brainhu on 2017/6/1.
  */
 public class MyThreadLocal<T> {

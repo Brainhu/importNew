@@ -28,7 +28,7 @@ public class PropertiesLoader {
 
 	private static ResourceLoader resourceLoader = new DefaultResourceLoader();
 
-	private final Properties properties;
+	private static Properties properties;
 
 	public PropertiesLoader(String... resourcesPaths) {
 		properties = loadProperties(resourcesPaths);
@@ -41,7 +41,7 @@ public class PropertiesLoader {
 	/**
 	 * 取出Property。
 	 */
-	private String getValue(String key) {
+	private static String getValue(String key) {
 		String systemProperty = System.getProperty(key);
 		if (systemProperty != null) {
 			return systemProperty;
@@ -52,7 +52,7 @@ public class PropertiesLoader {
 	/**
 	 * 取出String类型的Property,如果都為Null则抛出异常.
 	 */
-	public String getProperty(String key) {
+	public static String getProperty(String key) {
 		String value = getValue(key);
 		if (value == null) {
 			throw new NoSuchElementException();

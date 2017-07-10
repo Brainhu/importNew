@@ -1,4 +1,4 @@
-package com.brain.Threads;
+package com.brain.Concurrent.Threads;
 
 /**
  * Created by Brainhu on 2017/6/1.

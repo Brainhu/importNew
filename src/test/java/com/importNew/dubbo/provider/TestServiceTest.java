@@ -11,7 +11,7 @@ public class TestServiceTest {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                new String[]{"application.xml"});
+                new String[]{"spring_dubbo.xml"});
         context.start();
         System.out.println("提供者服务已注册成功");
         try {
