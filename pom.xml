@@ -19,12 +19,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sitemesh.version>2.4.2</sitemesh.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.12</junit.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <commons-lang3.version>3.1</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
-        <guava.version>13.0.1</guava.version>
+        <guava.version>19.0</guava.version>
         <jackson.version>2.1.2</jackson.version>
         <dozer.version>5.3.2</dozer.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
@@ -471,5 +471,30 @@
             <version>${cxf.version}</version>
         </dependency>
         <!-- SOAP end -->
+        <!-- https://mvnrepository.com/artifact/org.jodd/jodd -->
+<!--        <dependency>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-all</artifactId>
+            <version>3.9.1</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-core</artifactId>
+            <version>3.9.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.rholder</groupId>
+            <artifactId>guava-retrying</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 </project>
