@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by Brainhu on 15/6/1.
- * 这段代码会以前内存泄露
+ * 这段代码会引起内存泄露
  */
 public class GC {
     public static void main(String[] main) {
