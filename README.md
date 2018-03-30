@@ -16,3 +16,18 @@ importNew网站学习代码
 2.在设计分布式计算时，我们分布式计算可以采用 MapReduce、Apache Hadoop、Apache Spark 等。
 3.在大数据和分布式存储方面，我们可以选择 Apache HBase、Apache Cassandra、Memcached、Redis、MongoDB等。
 4.在分布式监控方面，常用的技术包括Nagios、Zabbix、Consul、ZooKeeper等。
+
+百度BAE
+private static String id ="3814948"; 
+private static String apiKey="kKh3zV0yhxUjKM7zm7B5cWFo"; 
+private static String secretKey ="NdKBWAeHQT4SMKQ33gBHx4AAO4KGoj9y";
+
+微信
+Token = Rookie890Token
+EncodingAESKey =AnPQv9f5mF7o9aTvIKQmVSjc2XUloc2RzUx2x3VrGcj
+
+京东JAE
+
+URL= http://rookie2014.jd-app.com/coreServlet 
+Token =Rookie890Token
+EncodingAESKey= rqvFtv8bnkD4ZNYeFLgOR7zg9afz9vmjOLrhiR5Xafh
