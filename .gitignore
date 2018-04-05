@@ -33,3 +33,4 @@ target
 *.iml
 *.~*
 /doc
+/bin/
