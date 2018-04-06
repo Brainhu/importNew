@@ -1,7 +1,11 @@
 package Test;
 
 
+import com.brain.Singleton.ELvis;
+import com.brain.Singleton.enumElvis;
 import com.common.util.RedisUtil;
+import com.importNew.Reflect.ClassUtil;
+
 import org.junit.Test;
 
 /**
@@ -10,13 +14,25 @@ import org.junit.Test;
 
 public class MainTest {
 
+	@Test
+	public void SingletonTest() {
+		ELvis.getInstance().leaveTheBuilding();
+		enumElvis.INSTANCE.leaveTheBuilding();
+		ClassUtil.printClassMethodMessage(enumElvis.INSTANCE);
+	}
     @Test
-    public void test(){/*
-        //String s=args[0];
-        //System.out.println("s= "+s);
-        ELvis.getInstance().leaveTheBuilding();
-        enumElvis.INSTANCE.leaveTheBuilding();
-    */
-        RedisUtil.set("name","biao.hu");
+    public void test(){
+        String hello="hello";
+        String lo= "lo";
+        System.out.println(hello == "hello");
+        System.out.println(hello == "hel"+lo);
+        System.out.println(other.hello == hello);
+        System.out.println(other.hello == ("hel"+lo).intern());
+
+    }
+    public class other{ public final static String hello = "hello";}
+    @Test
+    public void redisTest() {
+    	RedisUtil.set("name","biao.hu");
     }
 }

@@ -19,7 +19,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sitemesh.version>2.4.2</sitemesh.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.12</junit.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <commons-lang3.version>3.1</commons-lang3.version>
@@ -504,5 +504,10 @@
             <version>1.5.0.M2</version>
         </dependency>
         <!-- import other module if need -->
+        <dependency>
+        	<groupId>org.projectlombok</groupId>
+        	<artifactId>lombok</artifactId>
+        	<version>1.14.2</version>
+        </dependency>
     </dependencies>
 </project>

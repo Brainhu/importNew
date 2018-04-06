@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class ConcurrentTotalFileSizeWQueue {
     private ExecutorService service;
-    final private BlockingQueue<Long> fileSizes = new ArrayBlockingQueue<>(500);
+    final private BlockingQueue<Long> fileSizes = new ArrayBlockingQueue<Long>(500);
     final AtomicLong pendingFileVisits = new AtomicLong();
     /**
      * 多线程浏览文件

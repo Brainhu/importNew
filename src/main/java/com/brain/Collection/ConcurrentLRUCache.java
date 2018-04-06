@@ -13,13 +13,13 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class ConcurrentLRUCache<K, V> {
     private int maxCacheSize;
-    private Map<K, CacheItem<V>> cache = new ConcurrentHashMap<>();
+    private Map<K, CacheItem<V>> cache = new ConcurrentHashMap<K, CacheItem<V>>();
     private AtomicLong totalEvictCount = new AtomicLong();
     private AtomicLong hitCount = new AtomicLong();
     private AtomicLong notHitCount = new AtomicLong();
 
     public ConcurrentLRUCache(int maxCacheSize) {
-        cache = new ConcurrentHashMap<>(maxCacheSize, 1, 10);
+        cache = new ConcurrentHashMap<K, CacheItem<V>>(maxCacheSize, 1, 10);
         this.maxCacheSize = maxCacheSize;
     }
 
