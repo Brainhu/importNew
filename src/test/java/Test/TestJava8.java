@@ -1,4 +1,6 @@
-package com.brain.java8;
+package Test;
+
+import org.junit.Test;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
@@ -10,8 +12,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.ParsePosition;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Month;
@@ -19,12 +19,11 @@ import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.mapping;
 import static java.util.stream.Collectors.toList;
+
 /**
  * Created by biao.hu on 2017/11/8.
  */

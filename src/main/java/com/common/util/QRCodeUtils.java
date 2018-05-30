@@ -1,3 +1,5 @@
+package com.common.util;
+
 import com.google.zxing.*;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;

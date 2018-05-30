@@ -1,3 +1,5 @@
+package com.common.util;
+
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.io.UnsupportedEncodingException;

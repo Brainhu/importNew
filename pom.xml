@@ -8,6 +8,18 @@
     <artifactId>importNew</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <repositories>
         <repository>
@@ -486,17 +498,12 @@
             <artifactId>cxf-rt-transports-http</artifactId>
             <version>${cxf.version}</version>
         </dependency>
-        <!-- SOAP end -->
         <!-- https://mvnrepository.com/artifact/org.jodd/jodd -->
-<!--        <dependency>
-            <groupId>org.jodd</groupId>
-            <artifactId>jodd-all</artifactId>
-            <version>3.9.1</version>
-        </dependency>-->
         <dependency>
             <groupId>org.jodd</groupId>
-            <artifactId>jodd-core</artifactId>
-            <version>3.9.1</version>
+            <artifactId>jodd</artifactId>
+            <version>3.4.1</version>
+            <type>pom</type>
         </dependency>
 
         <dependency>
@@ -532,6 +539,17 @@
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
             <version>3.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.3.2</version>
         </dependency>
     </dependencies>
 </project>
