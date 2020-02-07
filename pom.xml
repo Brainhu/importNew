@@ -8,6 +8,18 @@
     <artifactId>importNew</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <repositories>
         <repository>
@@ -24,7 +36,7 @@
         <hibernate.version>4.3.7.Final</hibernate.version>
         <commons-lang3.version>3.1</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
-        <guava.version>13.0.1</guava.version>
+        <guava.version>19.0</guava.version>
         <jackson.version>2.1.2</jackson.version>
         <dozer.version>5.3.2</dozer.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
@@ -486,7 +498,26 @@
             <artifactId>cxf-rt-transports-http</artifactId>
             <version>${cxf.version}</version>
         </dependency>
-        <!-- SOAP end -->
+        <!-- https://mvnrepository.com/artifact/org.jodd/jodd -->
+        <dependency>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd</artifactId>
+            <version>3.4.1</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.rholder</groupId>
+            <artifactId>guava-retrying</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
@@ -498,16 +529,27 @@
             <version>1.7.5.RELEASE</version>
         </dependency>
         <!-- import sharding-jdbc core -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.dangdang</groupId>
             <artifactId>sharding-jdbc-core</artifactId>
             <version>1.5.0.M2</version>
-        </dependency>
+        </dependency>-->
         <!-- import other module if need -->
         <dependency>
-        	<groupId>org.projectlombok</groupId>
-        	<artifactId>lombok</artifactId>
-        	<version>1.14.2</version>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.3.2</version>
         </dependency>
     </dependencies>
 </project>
