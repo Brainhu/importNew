@@ -31,7 +31,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sitemesh.version>2.4.2</sitemesh.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <spring.version>4.1.1.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
         <commons-lang3.version>3.1</commons-lang3.version>
