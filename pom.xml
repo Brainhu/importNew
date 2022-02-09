@@ -33,7 +33,7 @@
         <sitemesh.version>2.4.2</sitemesh.version>
         <junit.version>4.12</junit.version>
         <spring.version>4.1.1.RELEASE</spring.version>
-        <hibernate.version>4.3.7.Final</hibernate.version>
+        <hibernate.version>5.4.24.Final</hibernate.version>
         <commons-lang3.version>3.1</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
         <guava.version>19.0</guava.version>
